@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AI-Fitness-Suggestor</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+    </head>
+    <body>
+        <header class="header">
+            <h4 id="heading">AI-FITNESS-PLAN-GENERATOR</h4>
+        </header>
+        <div class="container">
+            <div class="c1" id="a1">
+                <p>Unleash your potential with a personalized fitness plan designed just for you. Whether you want to lose weight, build muscle, or boost endurance, our AI-powered generator creates workouts tailored to your goals, preferences, and schedule. Start your journey to a healthier you today!</p>
+            </div>
+            <div class="form">
+            <form id="fitness-form">
+        
+                <br><br>
+                <label>Name</label><br>
+                <input type="text" id="name" name="name" autocomplete="off"><br><br>
+
+                <label>Age</label><br>
+                <input type="number" id="age" name="age"><br><br>
+
+                <label>Gender</label><br>
+                <input type="radio" id="male" name="gender" value="male">Male
+                <input type="radio" id="female" name="gender" value="female">Female<br><br>
+
+                <label>Height (in cms) </label><br>
+                <input type="number" id="ht" name="ht"><br><br>
+
+                <label>Weight (in kgs)</label><br>
+                <input type="number" id="wt" name="wt"><br><br>
+
+                <label>Activity Level</label>
+                <select id="activity_level" name="activity_level">
+                    <option>Sedentary</option>
+                    <option>Lightly Active</option>
+                    <option>Moderately Active</option>
+                    <option>Highly Active</option>
+                </select><br><br>
+
+                <label>Current Fitness Level</label>
+                <select id="fitness_level" name="fitness_level">
+                    <option>Beginner</option>
+                    <option>Intermediate</option>
+                    <option>Advanced</option>
+                </select><br><br>
+
+            <button type="submit" id="b1" >Generate Your Plan Now</button>
+            </form>
+            </div>
+            <div id="results"></div>
+        </div>
+        <footer class="footer"></footer>
+        <script src="script.js"></script>
+    </body>
+</html>
